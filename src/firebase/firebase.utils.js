@@ -27,16 +27,20 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
     let hint=[false,false,false,false,false,false];
-    let showA=[false,false,false,false,false,false];
-    let subA=[false,false,false,false,false,false];
+    let showAnswer=[false,false,false,false,false,false];
+    let submitAnswer=[false,false,false,false,false,false];
     const score=0;
+    let finalStory='';
     try {
       await userRef.set({
         displayName,
         email,
         createdAt,
         score,
-        hint,showA,subA,
+        hint,
+        showAnswer,
+        submitAnswer,
+        finalStory,
         ...additionalData
       });
     } catch (error) {
@@ -53,5 +57,7 @@ export const firestore = firebase.firestore();
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: 'select_account' });
 export const signInWithGoogle = () => auth.signInWithPopup(provider);
+
+
 
 export default firebase;
