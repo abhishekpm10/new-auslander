@@ -26,6 +26,9 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!snapShot.exists) {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
+    let hint=[false,false,false,false,false,false];
+    let showA=[false,false,false,false,false,false];
+    let subA=[false,false,false,false,false,false];
     const score=0;
     try {
       await userRef.set({
@@ -33,6 +36,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         email,
         createdAt,
         score,
+        hint,showA,subA,
         ...additionalData
       });
     } catch (error) {

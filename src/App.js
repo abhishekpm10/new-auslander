@@ -14,8 +14,7 @@ class App extends React.Component {
     super();
 
     this.state = {
-      currentUser: null,
-      hint:false
+      currentUser: null 
     };
   }
 
@@ -46,25 +45,33 @@ class App extends React.Component {
     this.unsubscribeFromAuth();
   }
 
-  handleClick=()=>{
-      // const {currentUser}=this.state;
-      // console.log(currentUser);
-      // const userRef=firestore.doc(`users/${currentUser.id}`);
-   
-      // this.setState({hint:true})
-      // userRef.update({...currentUser,task1Hint:!currentUser.task1Hint});
+  handleHint=()=>{
+      const {currentUser}=this.state;
+      let {hint,score}=currentUser;
+      console.log(hint[2]);
+      if(!hint[0])
+      {
+        hint[0]=true;
+        const userRef=firestore.doc(`users/${currentUser.id}`);
+        userRef.update({...currentUser,hint,score:score-5});
+      }
+      
   }
+
+  
+
 
   render() {
     return (
       <div>
         <Header currentUser={this.state.currentUser} />
         
-        <button onClick={this.handleClick}>add</button>
+        <button onClick={this.handleHint}>Hint</button>
+
         <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route path='/shop' component={ShopPage} />
-          <Route path='/signin' component={SignInAndSignUpPage} />
+          <Route exact path='/home' component={HomePage} />
+          <Route exact path='/shop' component={ShopPage} />
+          <Route exact path='/' component={SignInAndSignUpPage} />
         </Switch>
       </div>
     );
