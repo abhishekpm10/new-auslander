@@ -30,7 +30,7 @@ export default class LevelSix extends Component {
     
     render() {
         const {id}=this.props;
-        const {venue,story,question,correctAnswer,photos}=this.props
+        const {venue,story,question,photos}=this.props
         
         return (
             <div>
