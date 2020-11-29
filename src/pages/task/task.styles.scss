@@ -1,0 +1,98 @@
+// .story-container{
+//     position: relative;
+//     .magnifier{
+//         background-image: url('../../assets/mag.svg');
+//         background-size:cover;
+//         background-position: center;
+//         position: absolute;
+//         padding:10px;
+//         height:60%;
+//         width:60%;
+//         // animation: mag 1s linear infinite;
+//         z-index: 2;
+//     }
+    
+//     // @keyframes mag{
+//     //     0%{
+//     //         transform: translateX(10px);
+//     //     }
+//     //     50%{
+//     //         transform: translateY(10px);
+//     //     }
+//     //     100%{
+//     //         transform: translateX(0px);
+//     //     }
+//     // }
+// }
+
+// .magnifier-container{
+//     width:100%;
+//     height: auto;
+//     background-image: url('../../assets/mag.png');
+//     background-size:cover;
+//     background-position: center;
+//     position: relative;
+
+//     .story-container{
+//         top:50%;
+//         left:50%;
+//         transform: translate(-50%,-50%);      
+//         height: 90%;
+//         width:90%;
+//         position: absolute;
+//     }
+
+    
+// }
+
+.task-page{
+
+    overflow-x:hidden;
+}
+.hero-image-container{
+
+    display: flex;
+    justify-content: center;
+
+    .task-images{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-image {
+        background-image: url('../../assets/mag.svg');
+        height:90vmin;
+        width:90vmin;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        scrollbar-width: 0px;
+    
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            overflow-y: scroll;
+            height:50%;
+            width:50%;
+            top: 45%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            color: black;
+           -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+    
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            
+          }
+        
+        
+      }
+      
+
+}
+
+ 

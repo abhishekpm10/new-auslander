@@ -29,7 +29,13 @@
         question:'Put the four digit values in latitude and longitude respectively',
         dataString:'know the dialect answer will be known by you.',
         correctAnswer:`51.44 0.067`,
-        photos:[]
+        photos:[`https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`
+        ]
     },
     {
         level:2,

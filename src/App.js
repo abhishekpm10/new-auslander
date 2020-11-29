@@ -70,7 +70,7 @@ class App extends React.Component {
   render() {
     let currentUser=this.state.currentUser;
     return (
-      <div>
+      <div className='app-main-container'>
         <Header {...currentUser} />
         
         {/* <button onClick={this.handleHint}>Hint</button> */}
