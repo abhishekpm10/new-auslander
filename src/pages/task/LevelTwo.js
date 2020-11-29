@@ -79,10 +79,11 @@ export default class LevelTwo extends Component {
     render() {
         const {id}=this.props;
         const {showAnswer,submitAnswer,hint} =this.props;
-        const {venue,story,question,dataString,correctAnswer,photos}=this.props
+        const {venue,story,question,dataString,correctAnswer,photos,level}=this.props
         
         return (
             <div>
+                <h1>Level {level}</h1>
                 <h1>{venue}</h1>
                 <div>{photos?console.log(`check ${id} complete`):null}</div>
                 <p>{story}</p>

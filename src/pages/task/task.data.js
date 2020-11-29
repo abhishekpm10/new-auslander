@@ -1,5 +1,6 @@
  const DATA=[
     {
+        level:1,
         venue:'London, Great Britain ,22 June,1887',
         story:`'Morning time , overcast weather-explain it more precisely
         A chariot(2 white horses and charioteer named George) lands over 221b baker street and enters in Sherlock Holmes’s room….give description about the charioteer’s attire(should be royal)
@@ -31,6 +32,7 @@
         photos:[]
     },
     {
+        level:2,
         venue:'On a route to Sydenham hill wood forest',
         story:`After getting the clue, Sherlock and you are on a way to Sydenham hill wood(describe the scenery through journey in brief)
         Sherlock and you reached the main Sydenham station(station briefing can be given as an isolated one)
@@ -60,6 +62,7 @@
         photos:[]
     },
     {
+        level:3,
         venue:'Near Junkyard, in cross wood rail,London  1918',
         story:`Sherlock and you enter the junkyard(give description of junkyard as fenced scrapped land with lot of waste material)
         They see a small warehouse in corner.
@@ -90,6 +93,7 @@
         photos:[]
     },
     {
+        level:4,
         venue:`Big Ben,London,1859`,
         story:`Sherlock and you comes at the entrance of big ben(Night time….describe the silence of night and complete darkness)
         Sherlock and you climbs all way up through stairs to 114 steps in tower where a small room(prison room….which was in construction phase)
@@ -120,6 +124,7 @@
         photos:[]
     },
     {
+        level:5,
         venue:`The Buckingham Palace,25 June 1887`,
         story:`You ask Sherlock that we have came to proper location but the time set by you is wrong
         Sherlock gives a faint smile to you and then moves on toward the main door of the palace
@@ -144,6 +149,7 @@
         photos:[]
     },
     {
+        level:6,
         venue:`The Buckingham Palace,27 June 1887`,
         story:`There was a celebration party at The Buckingham Palace(describe in brief about decoration to the palace) for celebrating Queen Victoria’s 50 years of glorious reign
         Sherlock was observing the party ….there he meets price henry..and says that he want to talk something private with him….Henry tells the waiter to bring them drinks in the central room(situated at the first floor)..they both goes there

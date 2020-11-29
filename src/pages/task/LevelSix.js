@@ -30,10 +30,11 @@ export default class LevelSix extends Component {
     
     render() {
         const {id}=this.props;
-        const {venue,story,question,photos}=this.props
+        const {venue,story,question,photos,level}=this.props
         
         return (
             <div>
+                <h1>Level {level}</h1>
                 <h1>{venue}</h1>
                 <div>{photos?console.log(`check ${id} complete`):null}</div>
                 <p>{story}</p>
