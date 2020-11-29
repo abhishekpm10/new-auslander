@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {firestore} from '../../firebase/firebase.utils'
 import FormInput from '../../components/form-input/form-input.component'
 import {Link} from 'react-router-dom'
-import {Button,Jumbotron, Row,Col,Image,Container} from 'react-bootstrap'
+import {Button,Jumbotron, Row,Col,Image} from 'react-bootstrap'
 import './task.styles.scss'
 
 export default class LevelOne extends Component {
