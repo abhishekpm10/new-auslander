@@ -63,7 +63,10 @@
         question:`Tell which year Sherlock and you are in?`,
         dataString:`try to decipher the code written on chit that was found in hut`,
         correctAnswer:`1918`,
-        photos:[]
+        photos:[`https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`
+        ]
     },
     {
         level:3,
@@ -94,12 +97,16 @@
         `,
         question:`Tell us the place of next murder?`,
         dataString:`Tick Tock….Tick Tock…`,
-        correctAnswer:`Big Ben`,
-        photos:[]
+        correctAnswer:`big ben`,
+        photos:[`https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`
+        ]
     },
     {
         level:4,
-        venue:`Big Ben,London,1859`,
+        venue:`Big Ben,London,`,
+        venueTime:'1859',
         story:`Sherlock and you comes at the entrance of big ben(Night time….describe the silence of night and complete darkness)
         Sherlock and you climbs all way up through stairs to 114 steps in tower where a small room(prison room….which was in construction phase)
         While climbing up there were flambeau (Hindi me mashal (मषाल) ) at regular intervals.
@@ -125,12 +132,16 @@
         `,
         question:`what date does the black hooded figure give to Sherlock…i.e the date on which he will commit final murder?`,
         dataString:`Figure on two significant events occurred from the clue…ans will be known to you`,
-        correctAnswer:`June 27,1887`,
-        photos:[]
+        correctAnswer:`june 27,1887`,
+        photos:[`https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`
+        ]
     },
     {
         level:5,
-        venue:`The Buckingham Palace,25 June 1887`,
+        venue:`The Buckingham Palace,`,
+        venueTime:'25 June 1887',
         story:`You ask Sherlock that we have came to proper location but the time set by you is wrong
         Sherlock gives a faint smile to you and then moves on toward the main door of the palace
         Sherlock and you visits prince Henry who was now ready to be crowned as king on 28 June….Prince Henry was in his own worry regarding the disappearance of all his close associative within the span of 4 days from incident…Sherlock hides the fact of there murder from king as he won’t believe the time story and was having insufficient time also Henry invites Sherlock to come to his ceremony in the palace on 27 June where Queen Victoria’s 50 years of reign will be celebrated…then he exits place
@@ -150,12 +161,16 @@
         `,
         question:`Black hooded devil is?`,
         dataString:`refer chapter 4 where the black hooded figure murders David(first time wearing Victorian clothes and not the black hood)`,
-        correctAnswer:`Austin`,
-        photos:[]
+        correctAnswer:`austin`,
+        photos:[`https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`
+        ]
     },
     {
         level:6,
-        venue:`The Buckingham Palace,27 June 1887`,
+        venue:`The Buckingham Palace,`,
+        venueTime:'27 June 1887',
         story:`There was a celebration party at The Buckingham Palace(describe in brief about decoration to the palace) for celebrating Queen Victoria’s 50 years of glorious reign
         Sherlock was observing the party ….there he meets price henry..and says that he want to talk something private with him….Henry tells the waiter to bring them drinks in the central room(situated at the first floor)..they both goes there
         In the central room Henry find’s a 10 year old boy ,who was Lucas( Sherlock made him come to party along with him)….Henry just kind of ignore the boy and asks Sherlock if he had known something about the murderer that he wanted to talk…to which Sherlock replies-“Yes, Prince Henry” or shall I say “Murderer Henry”….Henry quite of being in panic state also speaks in harsh tone with Sherlock that “what nonsense is this”
@@ -177,7 +192,11 @@
         Sherlock and you are sitting on the sofa seeing newspaper stating the demise of henry and Charles left no option for queen Victoria to take hold of power in her hands again till she finds a appropriate ruler for London.
                 Sherlock asks you if you are able to find a jinx in this entire sequence of events that would have prevented this time loop or bootstrap paradox to which you replies ”Yes,…
         `,
-        question:`Fill the answer in the conclusion box-`
+        question:`Fill the answer in the conclusion box-`,
+        photos:[`https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
+        `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`
+        ]
     }
 ]
 
