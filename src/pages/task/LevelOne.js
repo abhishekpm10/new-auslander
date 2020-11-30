@@ -51,7 +51,7 @@ export default class LevelOne extends Component {
     handleChange = event => {
         const { name, value } = event.target;
     
-        this.setState({ [name]: value });
+        this.setState({ [name]: value.toLowerCase() });
       };
 
     handleUserAnswer =async ()=>{
@@ -80,12 +80,16 @@ export default class LevelOne extends Component {
     render() {
         // const {id}=this.props;
         const {showAnswer,submitAnswer,hint} =this.props;
-        const {venue,story,question,dataString,correctAnswer,photos,level}=this.props
+        const {venue,story,question,dataString,correctAnswer,photos,level,venueTime}=this.props
         
         return (
             <Jumbotron className='task-page task-content-container'>
                 <Row className="task-page-heading">Level {level}</Row>
-                <Row>{venue}</Row>
+                <Row className="task-page-heading">{venue}</Row>
+                {
+                    venueTime?(<Row className="task-page-heading">{venueTime}</Row>):null
+                }
+                
                 <Row>
                 <Col className='task-images' md={6} sm={12}>{photos?(photos.map((photo)=>(
                     <div className='task-image-container'>
@@ -120,11 +124,11 @@ export default class LevelOne extends Component {
                     label={`${question}`}
                 />
                 
-                    <Button variant="outline-primary" onClick={this.handleUserAnswer}>Check Answer</Button>
-                    <Button variant="outline-primary" onClick={this.handleHint}>Hint Please</Button>
-                    <Button variant="outline-primary" onClick={this.handleShowAnswer}>Show Answer</Button>
+                    <Button variant="outline-primary" style={{margin:'0px 5px'}} onClick={this.handleUserAnswer}>Check Answer</Button>
+                    <Button variant="outline-primary" style={{margin:'0px 5px'}} onClick={this.handleHint}>Hint Please</Button>
+                    <Button variant="outline-primary" style={{margin:'0px 5px'}} onClick={this.handleShowAnswer}>Show Answer</Button>
                     {
-                     showAnswer?(showAnswer[0]?<Button variant="outline-primary"><Link to='/level2'> Next Level</Link></Button>:(submitAnswer?(submitAnswer[0]?<Button variant="outline-primary"><Link to='/level2'> Next Level</Link></Button>:null):null)):null
+                     showAnswer?(showAnswer[0]?<Button variant="outline-primary" style={{margin:'0px 5px'}}><Link to='/level2'> Next Level</Link></Button>:(submitAnswer?(submitAnswer[0]?<Button variant="outline-primary" style={{margin:'0px 5px'}}><Link to='/level2'> Next Level</Link></Button>:null):null)):null
                     }
                 
                

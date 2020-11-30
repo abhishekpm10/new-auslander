@@ -1,7 +1,8 @@
  const DATA=[
     {
         level:1,
-        venue:'London, Great Britain ,22 June,1887',
+        venue:'London, Great Britain ,',
+        venueTime:'22 June,1887',
         story:`'Morning time , overcast weather-explain it more precisely
         A chariot(2 white horses and charioteer named George) lands over 221b baker street and enters in Sherlock Holmes’s room….give description about the charioteer’s attire(should be royal)
         George hands over written envelop to Sherlock (sitting on his famous sofa enjoying pipe….explain more precisely) and user (user is Watson) is reading a fictional time travelling tale.
@@ -66,7 +67,8 @@
     },
     {
         level:3,
-        venue:'Near Junkyard, in cross wood rail,London  1918',
+        venue:'Near Junkyard, in cross wood rail,London,Great Britain ,',
+        venueTime:'1918',
         story:`Sherlock and you enter the junkyard(give description of junkyard as fenced scrapped land with lot of waste material)
         They see a small warehouse in corner.
         They enter the warehouse finding out nobody there, but a big cross hanging on the wall having a burnt dead body hanging over it.

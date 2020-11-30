@@ -49,6 +49,10 @@
 
     overflow-x:hidden;
 
+    .task-page-heading{
+        justify-content: flex-end;
+        font-size: 2em;
+    }
     .task-images{
         display: flex;
         flex-wrap:wrap;
@@ -112,12 +116,13 @@
             left: 45%;
             transform: translate(-50%, -50%);
             color: black;
-           -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
+            z-index:5;
+        //    -ms-overflow-style: none;  /* IE and Edge */
+        //     scrollbar-width: none;  /* Firefox */
     
-            &::-webkit-scrollbar {
-                display: none;
-            }
+        //     &::-webkit-scrollbar {
+        //         display: none;
+        //     }
             
           }
         
