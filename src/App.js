@@ -7,6 +7,7 @@ import HomePage from './pages/homepage/homepage.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+import {Container} from 'react-bootstrap'
 
 import LevelOne from './pages/task/LevelOne'
 import LevelTwo from './pages/task/LevelTwo'
@@ -70,7 +71,7 @@ class App extends React.Component {
   render() {
     let currentUser=this.state.currentUser;
     return (
-      <div className='app-main-container'>
+      <Container fluid className='app-main-container'>
         <Header {...currentUser} />
         
         {/* <button onClick={this.handleHint}>Hint</button> */}
@@ -86,7 +87,7 @@ class App extends React.Component {
           <Route exact path='/' render={()=>currentUser?(<Redirect to='/level1'/>):<SignInAndSignUpPage/>}/>
           
         </Switch>
-      </div>
+      </Container>
     );
   }
 }

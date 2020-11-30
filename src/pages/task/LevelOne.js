@@ -18,11 +18,11 @@ export default class LevelOne extends Component {
     
     handleHint=async ()=>{
             const {id}=this.props;
-            let {hint,score}=this.props;
+            let {hint,score,submitAnswer}=this.props;
 
             if(hint)
             {
-                if(!hint[0])
+                if((!submitAnswer[0])&&(!hint[0]))
                 {
                     hint[0]=true;
                     const userRef=firestore.doc(`users/${id}`);       
@@ -34,11 +34,11 @@ export default class LevelOne extends Component {
 
     handleShowAnswer=async ()=>{
         const {id}=this.props;
-        let {showAnswer,score}=this.props;
+        let {showAnswer,score,submitAnswer}=this.props;
         
         if(showAnswer)
         {
-            if(!showAnswer[0])
+            if((!submitAnswer[0])&&(!showAnswer[0]))
             {
                 showAnswer[0]=true;
                 const userRef=firestore.doc(`users/${id}`);       
@@ -83,11 +83,16 @@ export default class LevelOne extends Component {
         const {venue,story,question,dataString,correctAnswer,photos,level}=this.props
         
         return (
-            <Jumbotron className='task-page'>
+            <Jumbotron className='task-page task-content-container'>
                 <Row className="task-page-heading">Level {level}</Row>
                 <Row>{venue}</Row>
                 <Row>
-                <Col className='task-images' md={6} sm={12}>{photos?(photos.map((photo)=><Image className='task-image-inside-board' style={{maxWidth:'250px',height:'auto',padding:'30px'}} src={`${photo}`} ></Image>)):null}
+                <Col className='task-images' md={6} sm={12}>{photos?(photos.map((photo)=>(
+                    <div className='task-image-container'>
+                        <Image className='task-image-container-inner' style={{maxWidth:'300px',height:'auto',padding:'10px'}} src={`${photo}`} ></Image>
+                        {/* <h1>Hello</h1> */}
+                    </div>
+                    ))):null};
                 
                 </Col>
                 <Col md={6} sm={12}className='hero-image-container'>

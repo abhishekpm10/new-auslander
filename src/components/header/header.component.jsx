@@ -4,23 +4,30 @@ import { Link } from 'react-router-dom';
 import { auth } from '../../firebase/firebase.utils';
 
 import { ReactComponent as Logo } from '../../assets/crown.svg';
+import Timer from '../timer/timer'
 
 import './header.styles.scss';
 
-const Header = ({ displayName,score }) => (
+const Header = ({ displayName,score,email }) => (
   <div className='header'>
     <Link className='logo-container' to='/level1'>
       <Logo className='logo' />
     </Link>
    
     <div className='options'>
+      {email? (
+          <div className='option' onClick={() => auth.signOut()}>
+             <Timer></Timer>
+          </div>
+        ) :null
+      }
       <div className='option'>
         {displayName}
       </div>
       <div className='option'>
        {score}
       </div>
-      {displayName ? (
+      {email? (
         <div className='option' onClick={() => auth.signOut()}>
           SIGN OUT
         </div>
