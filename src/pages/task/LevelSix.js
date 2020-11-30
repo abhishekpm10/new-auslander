@@ -34,7 +34,7 @@ export default class LevelOne extends Component {
     render() {
         // const {id}=this.props;
         const {showAnswer} =this.props;
-        const {venue,story,question,photos,level,venueTime}=this.props
+        const {venue, story,question,photos,level,venueTime}=this.props
         
         return (
             <Jumbotron className='task-page task-content-container'>
