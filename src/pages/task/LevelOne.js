@@ -84,10 +84,10 @@ export default class LevelOne extends Component {
         
         return (
             <Jumbotron className='task-page'>
-                <Row>Level {level}</Row>
+                <Row className="task-page-heading">Level {level}</Row>
                 <Row>{venue}</Row>
                 <Row>
-                <Col className='task-images' md={6} sm={12}>{photos?(photos.map((photo)=><Image style={{maxWidth:'250px',height:'auto'}} src={`${photo}`} ></Image>)):null}
+                <Col className='task-images' md={6} sm={12}>{photos?(photos.map((photo)=><Image className='task-image-inside-board' style={{maxWidth:'250px',height:'auto',padding:'30px'}} src={`${photo}`} ></Image>)):null}
                 
                 </Col>
                 <Col md={6} sm={12}className='hero-image-container'>

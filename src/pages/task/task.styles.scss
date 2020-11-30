@@ -48,17 +48,23 @@
 .task-page{
 
     overflow-x:hidden;
+
+    .task-images{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-image:url('../../assets/board.png');
+          background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 .hero-image-container{
 
     display: flex;
     justify-content: center;
 
-    .task-images{
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
+    
 
     .hero-image {
         background-image: url('../../assets/mag.svg');
