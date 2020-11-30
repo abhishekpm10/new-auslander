@@ -94,7 +94,11 @@
     display: flex;
     justify-content: center;
 
-    
+    .task-images{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
     .hero-image {
         background-image: url('../../assets/mag.svg');
