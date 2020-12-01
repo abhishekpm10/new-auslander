@@ -8,12 +8,11 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: blue;
 }
 
 * {
   box-sizing: border-box;
-  color:black;
 }
 
 .app-main-container{
@@ -23,7 +22,7 @@ a {
   background-image: url('./assets/landing1.jpg');
   background-position: center;
   background-size: cover;
-  /* animation: filter 10s linear infinite; */
+  animation: filter 10s linear infinite;
   position: absolute;
 
 }

@@ -15,15 +15,18 @@ export default function Timer() {
 
   React.useEffect(() => {
     if (timer === 0) {
+      console.log("sorry time out")
       clear();
     }
   }, [timer]);
 
   return (
     <>
-      <div>
+      <div style={{color:'white'}}>
         Time left {Math.floor(timer / 60)}:{timer % 60}{" "}
       </div>
     </>
   );
 }
+
+

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {firestore} from '../../firebase/firebase.utils'
 import FormInput from '../../components/form-input/form-input.component'
 import {Link} from 'react-router-dom'
-import {Button,Jumbotron, Row,Col,Image} from 'react-bootstrap'
+import {Button,Jumbotron, Row,Col} from 'react-bootstrap'
 import './task.styles.scss'
 
 export default class LevelOne extends Component {
@@ -80,27 +80,35 @@ export default class LevelOne extends Component {
     render() {
         // const {id}=this.props;
         const {showAnswer,submitAnswer,hint} =this.props;
-        const {venue,story,question,dataString,correctAnswer,photos,level,venueTime}=this.props
+        const {venue,story,question,dataString,correctAnswer,level,venueTime}=this.props
         
         return (
-            <Jumbotron className='task-page task-content-container'>
-                <Row className="task-page-heading">Level {level}</Row>
-                <Row className="task-page-heading">{venue}</Row>
-                {
-                    venueTime?(<Row className="task-page-heading">{venueTime}</Row>):null
-                }
-                
-                <Row>
-                
-                <Col md={6} sm={12}className='hero-image-container'>
-                    <div className="hero-image">
-                        <div className="hero-text">
-                            <p>{story}</p>                    
+            <Jumbotron className='task-page'>
+                <div className="inside-book">
+                    <Row className="task-page-heading">Level {level}</Row>                   
+                    <Row className="task-page-heading">{venue}</Row>
+                    {
+                        venueTime?(<Row className="task-page-heading">{venueTime}</Row>):null
+                    }     
+                    <Row> 
+                    <Col className='hero-image-container'>
+                        <div className="hero-image">
+                            <div className="hero-text">
+                                <p>{story}</p>                    
+                            </div>
                         </div>
-                    </div>
-                    
-                </Col>
-                </Row>
+                        
+                    </Col>
+                    </Row>
+                    <FormInput
+                        type='text'
+                        name='userAnswer'
+                        value={this.state.userAnswer}
+                        onChange={this.handleChange}
+                        label={`${question}`}
+                    />
+                </div>
+               
                {/* {console.log(this.props)} */}
                {
                    hint?(hint[0]?<Row><h1>The Hint Is:{dataString}</h1></Row>:null):null
@@ -109,13 +117,7 @@ export default class LevelOne extends Component {
                    showAnswer?(showAnswer[0]?<Row><h1>The Answer Is:{correctAnswer}</h1></Row>:null):null
                }
                {/* <Row><h3>{question}</h3></Row> */}
-                <FormInput
-                    type='text'
-                    name='userAnswer'
-                    value={this.state.userAnswer}
-                    onChange={this.handleChange}
-                    label={`${question}`}
-                />
+               
                 
                     <Button variant="outline-primary" style={{margin:'0px 5px'}} onClick={this.handleUserAnswer}>Check Answer</Button>
                     <Button variant="outline-primary" style={{margin:'0px 5px'}} onClick={this.handleHint}>Hint Please</Button>
