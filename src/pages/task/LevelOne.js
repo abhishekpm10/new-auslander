@@ -91,14 +91,7 @@ export default class LevelOne extends Component {
                 }
                 
                 <Row>
-                <Col className='task-images' md={6} sm={12}>{photos?(photos.map((photo)=>(
-                    <div className='task-image-container'>
-                        <Image className='task-image-container-inner' style={{maxWidth:'300px',height:'auto',padding:'10px'}} src={`${photo}`} ></Image>
-                        {/* <h1>Hello</h1> */}
-                    </div>
-                    ))):null};
                 
-                </Col>
                 <Col md={6} sm={12}className='hero-image-container'>
                     <div className="hero-image">
                         <div className="hero-text">

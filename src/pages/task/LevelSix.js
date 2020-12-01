@@ -50,7 +50,7 @@ export default class LevelOne extends Component {
                         <Image className='task-image-container-inner' style={{maxWidth:'300px',height:'auto',padding:'10px'}} src={`${photo}`} ></Image>
                         {/* <h1>Hello</h1> */}
                     </div>
-                    ))):null};
+                    ))):null}
                 
                 </Col>
                 <Col md={6} sm={12}className='hero-image-container'>

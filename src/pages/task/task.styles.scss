@@ -66,7 +66,10 @@
         
         .task-image-container{
             position: relative;
-            
+            // background-image:url('../../assets/page1.jpg');
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // background-size: cover;
             &:nth-child(1)
             {
                 transform: rotate(-6deg);
@@ -101,10 +104,10 @@
     }
 
     .hero-image {
-        background-image: url('../../assets/mag.svg');
-        height:90vmin;
-        width:90vmin;
-        background-position: center;
+        // background-image: url('../../assets/mag.svg');
+        height:60vmin;
+        width:60vmin;
+        background-position: s;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
@@ -114,12 +117,13 @@
             text-align: center;
             position: absolute;
             overflow-y: scroll;
-            height:50%;
-            width:50%;
-            top: 45%;
-            left: 45%;
+            height:90%;
+            width:130%;
+            top: 29%;
+            left: 120%;
             transform: translate(-50%, -50%);
             color: black;
+            font-size:2em;
             z-index:5;
         //    -ms-overflow-style: none;  /* IE and Edge */
         //     scrollbar-width: none;  /* Firefox */
@@ -137,14 +141,10 @@
 }
 
 .task-content-container{
-    background:
-    radial-gradient(circle farthest-side at 0% 50%,#fb1 23.5%,rgba(240,166,17,0) 0)21px 30px,
-    radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0)19px 30px,
-    linear-gradient(#fb1 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fb1 0)0 0,
-    linear-gradient(150deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
-    linear-gradient(30deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
-    linear-gradient(90deg,#B71 2%,#fb1 0,#fb1 98%,#B71 0%)0 0 #fb1;
+    background-image:url('../../assets/page6.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width:100%;
+    height:100%;
 }
