@@ -117,15 +117,14 @@ export default class LevelOne extends Component {
                    showAnswer?(showAnswer[0]?<Row><h1>The Answer Is:{correctAnswer}</h1></Row>:null):null
                }
                {/* <Row><h3>{question}</h3></Row> */}
-               
-                
-                    <Button variant="outline-primary" style={{margin:'0px 5px'}} onClick={this.handleUserAnswer}>Check Answer</Button>
-                    <Button variant="outline-primary" style={{margin:'0px 5px'}} onClick={this.handleHint}>Hint Please</Button>
-                    <Button variant="outline-primary" style={{margin:'0px 5px'}} onClick={this.handleShowAnswer}>Show Answer</Button>
+               <div className="outside-book">
+                    <Button variant="success" style={{margin:'0px 5px'}} onClick={this.handleUserAnswer}>Check Answer</Button>
+                    <Button variant="warning" style={{margin:'0px 5px'}} onClick={this.handleHint}>Hint Please</Button>
+                    <Button variant="danger" style={{margin:'0px 5px'}} onClick={this.handleShowAnswer}>Show Answer</Button>
                     {
                      showAnswer?(showAnswer[0]?<Button variant="outline-primary" style={{margin:'0px 5px'}}><Link to='/level2'> Next Level</Link></Button>:(submitAnswer?(submitAnswer[0]?<Button variant="outline-primary" style={{margin:'0px 5px'}}><Link to='/level2'> Next Level</Link></Button>:null):null)):null
                     }
-                
+                </div>
                
             </Jumbotron>
         )
