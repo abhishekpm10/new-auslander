@@ -1,5 +1,6 @@
 import React from "react";
 import {reactLocalStorage} from 'reactjs-localstorage'
+import { auth } from '../../firebase/firebase.utils';
 
 
 export default function Timer({totalTime}) {
@@ -18,12 +19,13 @@ export default function Timer({totalTime}) {
 
   React.useEffect(() => {
     if (timer === 0) {
-      console.log("sorry time out")
+      console.log("sorry you cann't attemp test anymore");
+      auth.signOut();
       clear();
     }if(timer%10===0)
     {
       reactLocalStorage.set('timer', timer);
-      console.log("10 seconds")
+      console.log(timer)
     }
   }, [timer]);
 

@@ -26,7 +26,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!snapShot.exists) {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
-    const totalTime=5400;
+    
     let hint=[false,false,false,false,false,false];
     let showAnswer=[false,false,false,false,false,false];
     let submitAnswer=[false,false,false,false,false,false];
@@ -42,7 +42,6 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         showAnswer,
         submitAnswer,
         finalStory,
-        totalTime,
         ...additionalData
       });
     } catch (error) {

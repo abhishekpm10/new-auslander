@@ -3,7 +3,7 @@ import {firestore} from '../../firebase/firebase.utils'
 import FormInput from '../../components/form-input/form-input.component'
 import {Link} from 'react-router-dom'
 import {Button,Jumbotron, Row,Col} from 'react-bootstrap'
-import './task.styles.scss'
+import './styles/LevelOne.scss'
 
 export default class LevelOne extends Component {
 
@@ -55,7 +55,10 @@ export default class LevelOne extends Component {
       };
 
     handleUserAnswer =async ()=>{
-        if(this.props.correctAnswer===this.state.userAnswer)
+        const userRef=firestore.doc(`answers/1`);       
+        const {level1}=await (await userRef.get()).data();
+        console.log(level1);
+        if(level1===this.state.userAnswer)
         {
            
                     const {id,showAnswer}=this.props;
@@ -63,9 +66,10 @@ export default class LevelOne extends Component {
                    
                     if(showAnswer)
                     {
-                        if(!showAnswer[0])
+                        if(!showAnswer[0]&&!submitAnswer[0])
                         {
                             submitAnswer[0]=true;
+                            console.log(showAnswer[0]);
                             const userRef=firestore.doc(`users/${id}`);       
                             await userRef.update({submitAnswer,score:score+10});
                         }  
