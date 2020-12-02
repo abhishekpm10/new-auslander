@@ -83,7 +83,7 @@ export default class LevelOne extends Component {
         const {venue,story,question,dataString,correctAnswer,level,venueTime}=this.props
         
         return (
-            <Jumbotron className='task-page'>
+            <Jumbotron className='task-page-one'>
                 <div className="inside-book">
                     <Row className="task-page-heading">Level {level}</Row>                   
                     <Row className="task-page-heading">{venue}</Row>
@@ -122,7 +122,7 @@ export default class LevelOne extends Component {
                     <Button variant="warning" style={{margin:'0px 5px'}} onClick={this.handleHint}>Hint Please</Button>
                     <Button variant="danger" style={{margin:'0px 5px'}} onClick={this.handleShowAnswer}>Show Answer</Button>
                     {
-                     showAnswer?(showAnswer[0]?<Button variant="outline-primary" style={{margin:'0px 5px'}}><Link to='/level2'> Next Level</Link></Button>:(submitAnswer?(submitAnswer[0]?<Button variant="outline-primary" style={{margin:'0px 5px'}}><Link to='/level2'> Next Level</Link></Button>:null):null)):null
+                     showAnswer?(showAnswer[0]?<Button variant="success" style={{margin:'0px 5px'}}><Link to='/level2'> Next Level</Link></Button>:(submitAnswer?(submitAnswer[0]?<Button variant="success" style={{margin:'0px 5px'}}><Link to='/level2'> Next Level</Link></Button>:null):null)):null
                     }
                 </div>
                

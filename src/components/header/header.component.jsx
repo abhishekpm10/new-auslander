@@ -8,16 +8,19 @@ import Timer from '../timer/timer'
 
 import './header.styles.scss';
 
-const Header = ({ displayName,score,email }) => (
+const Header = ({ totalTime,displayName,score,email }) => (
   <div className='header'>
     <Link className='logo-container' to='/level1'>
       <Logo className='logo' />
     </Link>
+    {
+        console.log("from Header")
+    }
    
     <div className='options'>
       {email? (
-          <div className='option' onClick={() => auth.signOut()}>
-             <Timer></Timer>
+          <div className='option'>
+             <Timer uid={totalTime}></Timer>
           </div>
         ) :null
       }

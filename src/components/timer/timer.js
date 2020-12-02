@@ -1,7 +1,10 @@
 import React from "react";
+import {reactLocalStorage} from 'reactjs-localstorage'
 
-export default function Timer() {
-  const [timer, setTimer] = React.useState(5400);
+
+export default function Timer({totalTime}) {
+  const tmpVal=reactLocalStorage.get('timer', 5400);
+  const [timer, setTimer] = React.useState(tmpVal);
   const id = React.useRef(null);
   const clear = () => {
     window.clearInterval(id.current);
@@ -17,6 +20,10 @@ export default function Timer() {
     if (timer === 0) {
       console.log("sorry time out")
       clear();
+    }if(timer%10===0)
+    {
+      reactLocalStorage.set('timer', timer);
+      console.log("10 seconds")
     }
   }, [timer]);
 
