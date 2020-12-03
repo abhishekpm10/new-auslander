@@ -74,14 +74,15 @@ export default class LevelOne extends Component {
                 </div>
                
                {/* {console.log(this.props)} */}
-               {
-                   hint?(hint[5]?<Row><h1>The Hint Is:{dataString}</h1></Row>:null):null
-               }
-               {
-                   showAnswer?(showAnswer[5]?<Row><h1>The Answer Is:{correctAnswer}</h1></Row>:null):null
-               }
+              
                {/* <Row><h3>{question}</h3></Row> */}
                <div className="outside-book">
+                    {
+                        hint?(hint[5]?<Row><h3>The Hint Is:{dataString}</h3></Row>:null):null
+                    }
+                    {
+                        showAnswer?(showAnswer[5]?<Row><h3>The Answer Is:{correctAnswer}</h3></Row>:null):null
+                    }
                     <Button variant="success" style={{margin:'0px 5px'}} onClick={this.handleUserAnswer}>Submit Story</Button>
                     {
                         showAnswer?(<Button variant="outline-primary" style={{margin:'0px 5px'}}><Link to='/blackhoodeddevil'> Previous Level</Link></Button>):null

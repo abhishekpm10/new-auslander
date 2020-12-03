@@ -22,7 +22,7 @@ export default class LevelOne extends Component {
 
             if(hint)
             {
-                if((!submitAnswer[1])&&(!hint[1])&&(!showAnswer[0]))
+                if((!submitAnswer[1])&&(!hint[1])&&(!showAnswer[1]))
                 {
                     hint[1]=new Date();
                     const userRef=firestore.doc(`users/${id}`);       
@@ -114,14 +114,15 @@ export default class LevelOne extends Component {
                 </div>
                
                {/* {console.log(this.props)} */}
-               {
-                   hint?(hint[1]?<Row><h1>The Hint Is:{dataString}</h1></Row>:null):null
-               }
-               {
-                   showAnswer?(showAnswer[1]?<Row><h1>The Answer Is:{correctAnswer}</h1></Row>:null):null
-               }
+               
                {/* <Row><h3>{question}</h3></Row> */}
                <div className="outside-book">
+                    {
+                        hint?(hint[1]?<Row><h3>The Hint Is:{dataString}</h3></Row>:null):null
+                    }
+                    {
+                        showAnswer?(showAnswer[1]?<Row><h3>The Answer Is:{correctAnswer}</h3></Row>:null):null
+                    }
                     <Button variant="success" style={{margin:'0px 5px'}} onClick={this.handleUserAnswer}>Check Answer</Button>
                     <Button variant="warning" style={{margin:'0px 5px'}} onClick={this.handleHint}>Hint Please</Button>
                     <Button variant="danger" style={{margin:'0px 5px'}} onClick={this.handleShowAnswer}>Show Answer</Button>

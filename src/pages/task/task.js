@@ -1,22 +1,31 @@
  const DATA=[
     {
-        level:1,
-        venue:'London, Great Britain ,',
-        venueTime:'22 June,1887',
-        story:` The sun rose in a pool of crimson and gold, spilling light all over the land and the white clouds. Palm trees swayed gently in the breeze on 221b Baker Street. George on his chariot pulled by two fast slender white horses was coming through that golden glow. George wearing a tight-fitting, calf length coat with leather straps entered in Sherlock Home’s Room. 
-        Sherlock was sitting on his sofa and enjoying his pipe. He listened to the steps coming up his stairs; he watched the door opening and the charioteer of Queen Victoria George enters in his room and hands over a written envelop. You are sitting on the chair and reading the fictional time travelling tale. Sherlock reads aloud the envelop “Serious situation has risen, your services are required as soon as possible.”
-        You went to the Buckingham Palace along with Sherlock and George. The low arched door opened and the face came out. Arthur, Queen Victoria’s Brother, high-shouldered and bony; dressed in decent black, with a white wisp of a neck cloth welcomed Sherlock and you. He brings them to the East Front where Queen Victoria, Prince Henry with his close associates Albert and David along with Dr. William were present. Everyone was shocked and staring at the burnt body placed at the center. 
-                  The silence of palace broke by the voice of Prince Henry. He tells Sherlock about the dead body that it was his brother Charles that had been brutally murdered and John, one of the close associate of Prince Henry was missing since the murder. Queen Victoria tells about the declaration of next king which was round the corner so she asks Sherlock to solve the case as soon as possible. 
-                  Sherlock started inspecting the body. There was no any possibility of fingerprints as the body was burnt. He observed the close fist and asks you to open it. You find a half burned button in that closed fist along with small crumbs of oak leaves at the bottom toe of the burnt body. 
-    Sherlock: “Prince Henry, could you please tell when exactly did all this happened.”
-    Henry: “The day before yesterday, both of us were present in our farmhouse at Aylesbury ,celebrating the glorious reign of Queen Victoria. Then I received a message from Arthur to come to palace immediately and after our meeting got over I got to know that fire broke out at our farmhouse and Charles died their. Then we brought his body back to this palace in the midst of night so the news of Charles being dead don’t get leaked out.”
-    Sherlock looks in suspicion towards Arthur and asks him something.
-    Sherlock: “Arthur, why did you called Prince Henry?”
-    Arthur:  “I arranged a meeting with Lord of Sussex regarding the marriage proposal of princess Margery with Prince Henry.”
-    Sherlock assured queen that he will soon put this case in proper conclusion. Then, Sherlock and you left in the chariot.
-                   After reaching 221b Baker Street Mrs Hudson tells Sherlock that someone is waiting for him in his room. He finds out a 10 year old boy along with 50 year old women. She introduced herself as Ava and the boy as Lucas. Ava tells Sherlock that Jonas and Martha, Lucas’s parents and Austin, a 5 year old Lucas’s brother were missing since 2 days. Sherlock asked her about police complaint. She told that Inspector Lestrad was preoccupied with some other important case. So he could not help with it and asked to wait till appropriate time.
-                      Sherlock sees the tears in Lucas’s eyes. Later Lucas told that his parents and brother were supposed to come at 10 by night, but didn’t arrived at all. Ava tells that something strange happened yesterday; one black hooded devil came and dropped a box. Sherlock asked about that box and finds an encrypted message on a letter with a picture of hut on it’s back side along with their family photo. Sherlock also finds one machine in that box. He reads the message, “ tano moja kumweka nne nne na sifuri kumweka sifuri sita saba -if you get this correct, you get a step closer to find Lucas’s parents. Decipher the message and set it’s value in the machine …you will get to know what to do next.”
-     
+        // level:1,
+        // venue:'London, Great Britain ,',
+        // venueTime:'22 June,1887',
+        story:`                     I. THE ROYAL MURDER
+                                                    22 June, 1887
+London, Great Britain
+    
+    The sun rose in a pool of crimson and gold, spilling light all over 
+the land and the white clouds. Palm trees swayed gently in the breeze on 
+221b Baker Street. George on his chariot pulled by two fast slender white 
+horses was coming through that golden glow. George wearing a tight-fitting, 
+calf length coat with leather straps entered in Sherlock Home’s Room. 
+    The silence of palace broke by the voice of Prince Henry. He tells 
+Sherlock about the dead body that it was his brother Charles that had been 
+brutally murdered and John, one of the close associate of Prince Henry was 
+missing since the murder. Queen Victoria tells about the declaration of next 
+king which was round the corner so she asks Sherlock to solve the case 
+as soon as possible. 
+    You went to the Buckingham Palace along with Sherlock and George. 
+The low arched door opened and the face came out. Arthur, Queen Victoria’s 
+Brother, high-shouldered and bony; dressed in decent black, with a white wisp
+of a neck cloth welcomed Sherlock and you. He brings them to the East Front 
+where Queen Victoria, Prince Henry with his close associates Albert and David 
+along with Dr. William were present. Everyone was shocked and staring at the
+burnt body placed at the center. 
+       
     `,
         question:'Input the two values respectively (in the following format “value1 value2”)',
         dataString:'know the dialect answer will be known by you.',

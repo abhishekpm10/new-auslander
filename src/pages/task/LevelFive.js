@@ -18,11 +18,11 @@ export default class LevelOne extends Component {
     
     handleHint=async ()=>{
             const {id}=this.props;
-            let {hint,score,submitAnswer}=this.props;
+            let {hint,score,submitAnswer,showAnswer}=this.props;
 
             if(hint)
             {
-                if((!submitAnswer[4])&&(!hint[4]))
+                if((!submitAnswer[4])&&(!hint[4])&&(!showAnswer[4]))
                 {
                     hint[4]=new Date();
                     const userRef=firestore.doc(`users/${id}`);       
@@ -34,11 +34,11 @@ export default class LevelOne extends Component {
 
     handleShowAnswer=async ()=>{
         const {id}=this.props;
-        let {showAnswer,score,submitAnswer}=this.props;
+        let {score,submitAnswer,showAnswer}=this.props;
         
         if(showAnswer)
         {
-            if((!submitAnswer[4])&&(!showAnswer[4])&&(!showAnswer[0]))
+            if((!submitAnswer[4])&&(!showAnswer[4]))
             {
                 showAnswer[4]=new Date();
                 const userRef=firestore.doc(`users/${id}`);       
@@ -98,7 +98,7 @@ export default class LevelOne extends Component {
                     <Col className='hero-image-container'>
                         <div className="hero-image">
                             <div className="hero-text">
-                                <p>{story}</p>                    
+                                <pre>{story}</pre>                    
                             </div>
                         </div>
                         
@@ -114,14 +114,15 @@ export default class LevelOne extends Component {
                 </div>
                
                {/* {console.log(this.props)} */}
-               {
-                   hint?(hint[4]?<Row><h1>The Hint Is:{dataString}</h1></Row>:null):null
-               }
-               {
-                   showAnswer?(showAnswer[4]?<Row><h1>The Answer Is:{correctAnswer}</h1></Row>:null):null
-               }
+              
                {/* <Row><h3>{question}</h3></Row> */}
                <div className="outside-book">
+                    {
+                        hint?(hint[4]?<Row><h3>The Hint Is:{dataString}</h3></Row>:null):null
+                    }
+                    {
+                        showAnswer?(showAnswer[4]?<Row><h3>The Answer Is:{correctAnswer}</h3></Row>:null):null
+                    }
                     <Button variant="success" style={{margin:'0px 5px'}} onClick={this.handleUserAnswer}>Check Answer</Button>
                     <Button variant="warning" style={{margin:'0px 5px'}} onClick={this.handleHint}>Hint Please</Button>
                     <Button variant="danger" style={{margin:'0px 5px'}} onClick={this.handleShowAnswer}>Show Answer</Button>

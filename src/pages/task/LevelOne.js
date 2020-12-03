@@ -89,7 +89,7 @@ export default class LevelOne extends Component {
         return (
             <Jumbotron className='one-task-page'>
                 <div className="inside-book">
-                    <Row className="task-page-heading">Level {level}</Row>                   
+                    {/* <Row className="task-page-heading">Level {level}</Row>                    */}
                     <Row className="task-page-heading">{venue}</Row>
                     {
                         venueTime?(<Row className="task-page-heading">{venueTime}</Row>):null
@@ -98,7 +98,7 @@ export default class LevelOne extends Component {
                     <Col className='hero-image-container'>
                         <div className="hero-image">
                             <div className="hero-text">
-                                <p>{story}</p>                    
+                                <pre>{story}</pre>                    
                             </div>
                         </div>
                         
