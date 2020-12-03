@@ -3,8 +3,8 @@ import { Switch, Route,Redirect } from 'react-router-dom';
 
 import './App.css';
 
-import HomePage from './pages/homepage/homepage.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import Rules from './pages/rules/rules'
 import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import {Container} from 'react-bootstrap'
@@ -77,14 +77,14 @@ class App extends React.Component {
         {/* <button onClick={this.handleHint}>Hint</button> */}
         {/* <LevelOne {...currentUser}></LevelOne> */}
         <Switch>
-          <Route exact path='/home' component={HomePage} />
-          <Route exact path='/level1' render={()=><LevelOne {...DATA[0]} {...currentUser}></LevelOne>} />
-          <Route exact path='/level2' render={()=><LevelTwo {...DATA[1]} {...currentUser}></LevelTwo>} />
-          <Route exact path='/level3' render={()=><LevelThree {...DATA[2]} {...currentUser}></LevelThree>} />
-          <Route exact path='/level4' render={()=><LevelFour {...DATA[3]} {...currentUser}></LevelFour>} />
-          <Route exact path='/level5' render={()=><LevelFive {...DATA[4]} {...currentUser}></LevelFive>} />
-          <Route exact path='/level6' render={()=><LevelSix {...DATA[5]} {...currentUser}></LevelSix>} />
-          <Route exact path='/' render={()=>currentUser?(<Redirect to='/level1'/>):<SignInAndSignUpPage/>}/>
+          <Route exact path='/rule' component={Rules} />
+          <Route exact path='/theroyalmurder' render={()=><LevelOne {...DATA[0]} {...currentUser}></LevelOne>} />
+          <Route exact path='/dejavu' render={()=><LevelTwo {...DATA[1]} {...currentUser}></LevelTwo>} />
+          <Route exact path='/crosswood' render={()=><LevelThree {...DATA[2]} {...currentUser}></LevelThree>} />
+          <Route exact path='/nightofdarkness' render={()=><LevelFour {...DATA[3]} {...currentUser}></LevelFour>} />
+          <Route exact path='/blackhoodeddevil' render={()=><LevelFive {...DATA[4]} {...currentUser}></LevelFive>} />
+          <Route exact path='/endgame' render={()=><LevelSix {...DATA[5]} {...currentUser}></LevelSix>} />
+          <Route exact path='/' render={()=>currentUser?(<Redirect to='/rule'/>):<SignInAndSignUpPage/>}/>
           
         </Switch>
       </Container>

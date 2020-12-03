@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import {firestore} from '../../firebase/firebase.utils'
 import FormInput from '../../components/form-input/form-input.component'
 import {Link} from 'react-router-dom'
-import {Button,Jumbotron, Row,Col,Image} from 'react-bootstrap'
-import './task.styles.scss'
+import {Button,Jumbotron, Row,Col} from 'react-bootstrap'
+import './styles/LevelThree.scss'
 
 export default class LevelOne extends Component {
 
@@ -18,13 +18,13 @@ export default class LevelOne extends Component {
     
     handleHint=async ()=>{
             const {id}=this.props;
-            let {hint,score,submitAnswer}=this.props;
+            let {hint,score,submitAnswer,showAnswer}=this.props;
 
             if(hint)
             {
-                if((!submitAnswer[2])&&(!hint[2]))
+                if((!submitAnswer[2])&&(!hint[2])&&(!showAnswer[0]))
                 {
-                    hint[2]=true;
+                    hint[2]=new Date();
                     const userRef=firestore.doc(`users/${id}`);       
                     await userRef.update({hint,score:score-5});
                 }
@@ -40,7 +40,7 @@ export default class LevelOne extends Component {
         {
             if((!submitAnswer[2])&&(!showAnswer[2]))
             {
-                showAnswer[2]=true;
+                showAnswer[2]=new Date();
                 const userRef=firestore.doc(`users/${id}`);       
                 await userRef.update({showAnswer,score:score-10});
             }
@@ -55,6 +55,9 @@ export default class LevelOne extends Component {
       };
 
     handleUserAnswer =async ()=>{
+        // const userRef=firestore.doc(`answers/2`);       
+        // const {level1}=await (await userRef.get()).data();
+        // console.log(level1);
         if(this.props.correctAnswer===this.state.userAnswer)
         {
            
@@ -63,9 +66,10 @@ export default class LevelOne extends Component {
                    
                     if(showAnswer)
                     {
-                        if(!showAnswer[2])
+                        if(!showAnswer[2]&&!submitAnswer[2])
                         {
-                            submitAnswer[2]=true;
+                            submitAnswer[2]=new Date();
+                            console.log(showAnswer[2]);
                             const userRef=firestore.doc(`users/${id}`);       
                             await userRef.update({submitAnswer,score:score+10});
                         }  
@@ -80,34 +84,35 @@ export default class LevelOne extends Component {
     render() {
         // const {id}=this.props;
         const {showAnswer,submitAnswer,hint} =this.props;
-        const {venue,story,question,dataString,correctAnswer,photos,level,venueTime}=this.props
+        const {venue,story,question,dataString,correctAnswer,level,venueTime}=this.props
         
         return (
-            <Jumbotron className='task-page task-content-container'>
-                <Row className="task-page-heading">Level {level}</Row>
-                <Row className="task-page-heading">{venue}</Row>
-                {
-                    venueTime?(<Row className="task-page-heading">{venueTime}</Row>):null
-                }
-                
-                <Row>
-                <Col className='task-images' md={6} sm={12}>{photos?(photos.map((photo)=>(
-                    <div className='task-image-container'>
-                        <Image className='task-image-container-inner' style={{maxWidth:'300px',height:'auto',padding:'10px'}} src={`${photo}`} ></Image>
-                        {/* <h1>Hello</h1> */}
-                    </div>
-                    ))):null};
-                
-                </Col>
-                <Col md={6} sm={12}className='hero-image-container'>
-                    <div className="hero-image">
-                        <div className="hero-text">
-                            <p>{story}</p>                    
+            <Jumbotron className='three-task-page'>
+                <div className="inside-book">
+                    <Row className="task-page-heading">Level {level}</Row>                   
+                    <Row className="task-page-heading">{venue}</Row>
+                    {
+                        venueTime?(<Row className="task-page-heading">{venueTime}</Row>):null
+                    }     
+                    <Row> 
+                    <Col className='hero-image-container'>
+                        <div className="hero-image">
+                            <div className="hero-text">
+                                <p>{story}</p>                    
+                            </div>
                         </div>
-                    </div>
-                    
-                </Col>
-                </Row>
+                        
+                    </Col>
+                    </Row>
+                    <FormInput
+                        type='text'
+                        name='userAnswer'
+                        value={this.state.userAnswer}
+                        onChange={this.handleChange}
+                        label={`${question}`}
+                    />
+                </div>
+               
                {/* {console.log(this.props)} */}
                {
                    hint?(hint[2]?<Row><h1>The Hint Is:{dataString}</h1></Row>:null):null
@@ -116,24 +121,17 @@ export default class LevelOne extends Component {
                    showAnswer?(showAnswer[2]?<Row><h1>The Answer Is:{correctAnswer}</h1></Row>:null):null
                }
                {/* <Row><h3>{question}</h3></Row> */}
-                <FormInput
-                    type='text'
-                    name='userAnswer'
-                    value={this.state.userAnswer}
-                    onChange={this.handleChange}
-                    label={`${question}`}
-                />
-                
-                    <Button variant="outline-primary" style={{margin:'0px 5px'}} onClick={this.handleUserAnswer}>Check Answer</Button>
-                    <Button variant="outline-primary" style={{margin:'0px 5px'}} onClick={this.handleHint}>Hint Please</Button>
-                    <Button variant="outline-primary" style={{margin:'0px 5px'}} onClick={this.handleShowAnswer}>Show Answer</Button>
+               <div className="outside-book">
+                    <Button variant="success" style={{margin:'0px 5px'}} onClick={this.handleUserAnswer}>Check Answer</Button>
+                    <Button variant="warning" style={{margin:'0px 5px'}} onClick={this.handleHint}>Hint Please</Button>
+                    <Button variant="danger" style={{margin:'0px 5px'}} onClick={this.handleShowAnswer}>Show Answer</Button>
                     {
-                        showAnswer?(<Button variant="outline-primary" style={{margin:'0px 5px'}}><Link to='/level2'> Previous Level</Link></Button>):null
+                        showAnswer?(<Button variant="outline-primary" style={{margin:'0px 5px'}}><Link to='/dejavu'> Previous Level</Link></Button>):null
                     }
                     {
-                     showAnswer?(showAnswer[2]?<Button variant="outline-primary" style={{margin:'0px 5px'}}><Link to='/level4'> Next Level</Link></Button>:(submitAnswer?(submitAnswer[2]?<Button variant="outline-primary" style={{margin:'0px 5px'}}><Link to='/level4'> Next Level</Link></Button>:null):null)):null
+                     showAnswer?(showAnswer[2]?<Button variant="success" style={{margin:'0px 5px'}}><Link to='/nightofdarkness'> Next Level</Link></Button>:(submitAnswer?(submitAnswer[2]?<Button variant="success" style={{margin:'0px 5px'}}><Link to='/nightofdarkness'> Next Level</Link></Button>:null):null)):null
                     }
-                
+                </div>
                
             </Jumbotron>
         )

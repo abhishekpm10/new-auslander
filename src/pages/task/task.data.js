@@ -18,8 +18,9 @@
                       Sherlock sees the tears in Lucas’s eyes. Later Lucas told that his parents and brother were supposed to come at 10 by night, but didn’t arrived at all. Ava tells that something strange happened yesterday; one black hooded devil came and dropped a box. Sherlock asked about that box and finds an encrypted message on a letter with a picture of hut on it’s back side along with their family photo. Sherlock also finds one machine in that box. He reads the message, “ tano moja kumweka nne nne na sifuri kumweka sifuri sita saba -if you get this correct, you get a step closer to find Lucas’s parents. Decipher the message and set it’s value in the machine …you will get to know what to do next.”
      
     `,
-        question:'Put the four digit values in latitude and longitude respectively',
+        question:'Input the two values respectively (in the following format “value1 value2”)',
         dataString:'know the dialect answer will be known by you.',
+        correctAnswer:`51.44 0.067`,
         photos:[`https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
         `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
         `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`
@@ -38,8 +39,8 @@
                                                                                                      -To the most intelligent detective.”
         On reading the message Sherlock gets excited as he can finally unravel the mystery man, the black hooded devil. And he heads towards the given destination. 
         `,
-        question:`Tell which year Sherlock and you are in?`,
-        dataString:`try to decipher the code written on chit that was found in hut`,
+        question:`Tell which year Sherlock and you are currently in?`,
+        dataString:`Try to decipher the code written on chit that was found in hut.`,
         correctAnswer:`1918`,
         photos:[`https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
         `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
@@ -68,8 +69,8 @@
       The most amazing person on this planet” 
     Being angry on himself, Sherlock leaves the place in utter disappointment for the next location by setting the time machine.    
     `,
-        question:`Tell us the place of next murder?`,
-        dataString:`Tick Tock….Tick Tock…`,
+        question:`Tell us the place of next murder.`,
+        dataString:`Tick Tock… Tick Tock…`,
         correctAnswer:`big ben`,
         photos:[`https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
         `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
@@ -88,9 +89,9 @@
     Sherlock can see the wicked smile of the black hooded figure dressed in Victorian clothes. The man takes out the machine out of his coat along with a letter and drops it. Sherlock sets his gun to fire him but the man disappears suddenly. Then you both come at the end of the bridge to see the stuff that was dropped by the man. Sherlock sees the same time machine except the four extra rings for setting the day and month. The letter once again had something written on it-“ Finally we had entered the endgame. Just one murder left and you will get all your answers. Here is your last clue - Queen Victoria and the country is about celebrate a Golden Jubilee, the 50th year of her reign after a win in battle of Kennesaw mountain. Let’s meet for the last time soon.
                                         -Your Well-Wisher”
     `,
-        question:`what date does the black hooded figure give to Sherlock…i.e the date on which he will commit final murder?`,
+        question:`What date does the black hooded devil gives to Sherlock....i.e. the date on which                                                                         he will commit final murder? Answer should be in the following format -DD/MM/YYYY`,
         dataString:`Figure on two significant events occurred from the clue…ans will be known to you`,
-        correctAnswer:`june 27,1887`,
+        correctAnswer:`27/06/1887`,
         photos:[`https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
         `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
         `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`
@@ -115,7 +116,7 @@
         Sherlock and you come out of hiding and rushes towards the right entrance where you find everybody was lying dead and burnt. Sherlock takes a closer look towards the Jonas, Martha ,Prince Charles along with many people lying burnt. You looks at Sherlock who in his own suspense speaks something- “Finally, I know who my black hooded devil is!” A gentle smile comes at Sherlock’s face who now opens his time machine enters 27 June 1887 which is the day of final murder.
     `,
         question:`Black hooded devil is?`,
-        dataString:`refer chapter 4 where the black hooded figure murders David(first time wearing Victorian clothes and not the black hood)`,
+        dataString:`Refer chapter 4 where the black hooded devil murdered David. He was for the first time wearing Victorian clothes and not the black hood`,
         correctAnswer:`austin`,
         photos:[`https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,
         `https://firebasestorage.googleapis.com/v0/b/auslander-8242f.appspot.com/o/WhatsApp%20Image%202020-11-21%20at%2022.47.12(2).jpeg?alt=media&token=e36451a6-edcd-4694-95ef-b9ab400b89c0`,

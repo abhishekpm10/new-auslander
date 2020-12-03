@@ -18,13 +18,13 @@ export default class LevelOne extends Component {
     
     handleHint=async ()=>{
             const {id}=this.props;
-            let {hint,score,submitAnswer}=this.props;
+            let {hint,score,submitAnswer,showAnswer}=this.props;
 
             if(hint)
             {
-                if((!submitAnswer[0])&&(!hint[0]))
+                if((!submitAnswer[0])&&(!hint[0])&&(!showAnswer[0]))
                 {
-                    hint[0]=true;
+                    hint[0]=new Date();
                     const userRef=firestore.doc(`users/${id}`);       
                     await userRef.update({hint,score:score-5});
                 }
@@ -40,7 +40,7 @@ export default class LevelOne extends Component {
         {
             if((!submitAnswer[0])&&(!showAnswer[0]))
             {
-                showAnswer[0]=true;
+                showAnswer[0]=new Date();
                 const userRef=firestore.doc(`users/${id}`);       
                 await userRef.update({showAnswer,score:score-10});
             }
@@ -55,10 +55,10 @@ export default class LevelOne extends Component {
       };
 
     handleUserAnswer =async ()=>{
-        const userRef=firestore.doc(`answers/1`);       
-        const {level1}=await (await userRef.get()).data();
-        console.log(level1);
-        if(level1===this.state.userAnswer)
+        // const userRef=firestore.doc(`answers/1`);       
+        // const {level1}=await (await userRef.get()).data();
+        // console.log(level1);
+        if(this.props.correctAnswer===this.state.userAnswer)
         {
            
                     const {id,showAnswer}=this.props;
@@ -68,7 +68,7 @@ export default class LevelOne extends Component {
                     {
                         if(!showAnswer[0]&&!submitAnswer[0])
                         {
-                            submitAnswer[0]=true;
+                            submitAnswer[0]=new Date();
                             console.log(showAnswer[0]);
                             const userRef=firestore.doc(`users/${id}`);       
                             await userRef.update({submitAnswer,score:score+10});
@@ -87,7 +87,7 @@ export default class LevelOne extends Component {
         const {venue,story,question,dataString,correctAnswer,level,venueTime}=this.props
         
         return (
-            <Jumbotron className='task-page-one'>
+            <Jumbotron className='one-task-page'>
                 <div className="inside-book">
                     <Row className="task-page-heading">Level {level}</Row>                   
                     <Row className="task-page-heading">{venue}</Row>
@@ -113,20 +113,19 @@ export default class LevelOne extends Component {
                     />
                 </div>
                
-               {/* {console.log(this.props)} */}
-               {
-                   hint?(hint[0]?<Row><h1>The Hint Is:{dataString}</h1></Row>:null):null
-               }
-               {
-                   showAnswer?(showAnswer[0]?<Row><h1>The Answer Is:{correctAnswer}</h1></Row>:null):null
-               }
-               {/* <Row><h3>{question}</h3></Row> */}
+              
                <div className="outside-book">
+                    {
+                        hint?(hint[0]?<Row><h3>The Hint Is:{dataString}</h3></Row>:null):null
+                    }
+                    {
+                        showAnswer?(showAnswer[0]?<Row><h3>The Answer Is:{correctAnswer}</h3></Row>:null):null
+                    }
                     <Button variant="success" style={{margin:'0px 5px'}} onClick={this.handleUserAnswer}>Check Answer</Button>
                     <Button variant="warning" style={{margin:'0px 5px'}} onClick={this.handleHint}>Hint Please</Button>
                     <Button variant="danger" style={{margin:'0px 5px'}} onClick={this.handleShowAnswer}>Show Answer</Button>
                     {
-                     showAnswer?(showAnswer[0]?<Button variant="success" style={{margin:'0px 5px'}}><Link to='/level2'> Next Level</Link></Button>:(submitAnswer?(submitAnswer[0]?<Button variant="success" style={{margin:'0px 5px'}}><Link to='/level2'> Next Level</Link></Button>:null):null)):null
+                     showAnswer?(showAnswer[0]?<Button variant="success" style={{margin:'0px 5px'}}><Link to='/dejavu'> Next Level</Link></Button>:(submitAnswer?(submitAnswer[0]?<Button variant="success" style={{margin:'0px 5px'}}><Link to='/dejavu'> Next Level</Link></Button>:null):null)):null
                     }
                 </div>
                
