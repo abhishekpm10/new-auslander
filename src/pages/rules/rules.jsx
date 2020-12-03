@@ -6,7 +6,7 @@ export default function rules() {
     return (
         <Jumbotron className='rules-page-container'>
             <div className='rules-page-inner'>
-                <h3><strong>IMP:  If you are using mobile device then start website in desktop mode for better experience.For laptop or Desktop 
+                <h3><strong>IMP:  If you are using mobile device then start website in desktop mode for better experience.For laptop or Desktop,
                     users should prefer latest version of Google CHROME.
                     </strong> </h3>
 

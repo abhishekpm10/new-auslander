@@ -8,7 +8,7 @@ London, Great Britain
 the land and the white clouds. Palm trees swayed gently in the breeze on 
 221b Baker Street. George on his chariot pulled by two fast slender white 
 horses was coming through that golden glow. George wearing a tight-fitting, 
-calf length coat with leather straps entered in Sherlock Home’s Room. 
+calf length coat with leather straps entered in Sherlock Holme’s Room. 
     Sherlock was sitting on his sofa and enjoying his pipe. He listened to 
 the steps coming up his stairs; he watched the door opening and the 
 charioteer of Queen Victoria George enters in his room and hands over a 
@@ -84,8 +84,7 @@ Lucas’s parents. Decipher the message and set it’s value in the machine
                                                         June 23,1887
  On the route to Sydenhem hill wood forest ,Near London
     After identifying the clue, Sherlock and you are on the way to Sydenhem
-hill wood forest. It was an early autum morning and a frosty chill hung in 
-the air. The leaves from the tall trees lay scattered on the forest  floor. 
+hill wood forest. It was an early summer morning . The leaves from the tall trees lay scattered on the forest  floor. 
 And upon the forest floor so woven with ancient tree roots came a light 
 filtered by the bouquet of foliage above.
     Sherlock and you reached the main Sydenham station. It was a lonely 
@@ -146,9 +145,9 @@ destination.
 Near Junkyard, in cross wood rail, London
 
     Sherlock and you enter the Junkyard. There was lot of waste materials 
-like scrap metals, smashed bodies of old cars were thrown surrounded by 
-fence. They see a small warehouse in corner. They enter the warehouse 
-finding out nobody there, but a big cross hanging on the wall having a 
+like rusted metals, smashed bodies of vintage cars were thrown surrounded by 
+fence. There you see a small warehouse in corner. You both enter the 
+warehouse finding out nobody there, but a big cross hanging on the wall having a 
 burnt dead body hanging over it. The body was burnt but there was a mark 
 on his forehead and face not burnt properly, was identifiable. 
     Sherlock goes closer to see the face of burnt body and he was surprised. 
@@ -178,7 +177,7 @@ and save next man….code is “CSEO”.”
 Gun-fleet sands, Offshore of Thames River, London 
 
     Sherlock sees the black hooded devil watching the man get burnt at 
-offshore and run towards him to catch him. The black hooded man watches 
+offshore and run towards him to catch him. The black hooded devil watches 
 Sherlock approaching him so uses the time machine and vanishes in an instant. 
 Sherlock curses his misfortune but then he take a closer look towards the 
 body lying offshore and finds that he was none other than Albert, Prince 
@@ -207,14 +206,14 @@ Big Ben, London
     The night sky stood an inky canopy of darkness. The occasional hoot of 
 a hidden owl was the only sound to permeate the silence until a chorus of 
 slapping footsteps and crunching gravel echoed into the emptiness of the 
-night. Sherlock and you come at the entrance of Big Ben and climb all the 
+night. Sherlock and you came at the entrance of Big Ben and climb all the 
 way up through stairs to 114 steps in the tower where there was a small 
 room which was under construction and looked like a prison. While climbing 
 up there were flambeaux at regular intervals.
     When Sherlock entered the room, a strong fight was going on between 
 the black hooded figure and a Victorian dressed man. Before Sherlock 
 reacts to something the black hooded figure pushed the Victorian dressed 
-man towards the wall having flambeau on it. Sherlock didn’t looked into 
+man towards the wall having flambeau on it. Sherlock didn’t look into 
 the face of that man but was able to see some scars of burn around the 
 neck of that man. The Flambeau fell on the ground and got extinguished. 
 There was complete darkness. Taking advantage of it the black hooded 
@@ -240,8 +239,8 @@ cleverly the black hooded figure had played with him. He first exchanged
 his clothes with David and then made him to kill the wrong person. 
     Sherlock can see the wicked smile of the black hooded figure dressed 
 in Victorian clothes. The man takes out the machine out of his coat along 
-with a letter and drops it. Sherlock sets his gun to fire him but the man 
-disappears suddenly. Then you both come at the end of the bridge to see 
+with a letter and drops it. Sherlok looks at the devil but he disappears 
+in an instant. Then you both come at the end of the bridge to see 
 the stuff that was dropped by the man. Sherlock sees the same time machine 
 except the four extra rings for setting the day and month. The letter once 
 again had something written on it-“ Finally we had entered the endgame. 
@@ -266,7 +265,7 @@ Let’s meet for the last time soon.
 The Buckingham Palace,
     The palace was decorated like a new bride to admire his queen. The 
 golden glow spread across the sky as the sun is also trying to adore the 
-queen. Everyone is doing their duty with allegiance. Soldiers from 
+queen. Everyone is doing their duty with allegiance. Soldiers 
 throughout the British Empire were practicing in the Royal Garden. You 
 realized that there were still 2 days for the celebration. So, you asked 
 Sherlock that we have come to proper location but the time set by you is 
@@ -304,7 +303,7 @@ for hours Sherlock could see Prince Henry and his associates coming out of
 farmhouse and as soon as they came out fire eloped at that palace. All four 
 of them were looking at that palace and was laughing and celebrating. 
 Sherlock realized that it was Henry who had planned his brother’s murder 
-when very few days are remaining for king’s announcement. He had cleverly 
+when very few days were remaining for king’s announcement. He had cleverly 
 planned the entire execution by setting the right date for party ,managed 
 this place to be caught in fire and then himself staying away from it. The 
 whole farmhouse was in flames and lots of smoke was rising. Assuming that 
@@ -314,9 +313,9 @@ Lord of Sussex regarding the marriage proposal of Princess Margery and then
 come back to collect dead body of Charles back to the palace. John decides 
 to stay at that place to keep watch so everything goes as per plan. Henry 
 allows to do so and they leave.
-    Suddenly Sherlock sees another cart came and stopped near John. John 
-going near him to check who he was as he didn’t looked like George. The 
-cart-man pulled out heavy rod and hit John on his forehead. John become 
+    Suddenly Sherlock sees another cart that came and stopped near John. John 
+went near him to check who he was as he didn’t look like George. The 
+cart-man pulled out heavy rod and hit John on his forehead. John became 
 unconscious so, he lifted his body and threw it in the cart. Sherlock from 
 his way of clothing, knew that it was none other than black hooded devil, 
 who then ran toward the right door of farmhouse where door was mainly made 
@@ -330,7 +329,7 @@ Austin there with John. He opens his time machine and the cart disappeared.
     Sherlock and you come out of hiding and rushes towards the right 
 entrance where you find everybody was lying dead and burnt. Sherlock takes 
 a closer look towards the Jonas, Martha ,Prince Charles along with many 
-people lying burnt. You looks at Sherlock who in his own suspense speaks 
+people lying burnt. You look at Sherlock who in his own suspense speaks 
 something- “Finally, I know who my black hooded devil is!” A gentle smile 
 comes at Sherlock’s face who now opens his time machine enters 27 June 
 1887 which is the day of final murder.
@@ -343,6 +342,7 @@ comes at Sherlock’s face who now opens his time machine enters 27 June
         story:`                         VI. ENDGAME
                                                             
                                                             27 June 1887
+
 The Buckingham Palace,
     There was a celebration party at Buckingham Palace for celebrating 
 Queen Victoria’s 50 years of glorious reign.  The walls were lined with 
@@ -350,7 +350,7 @@ intricate oil paintings, illustrating the royal procession. The hall itself
 was magnificent with ornate ceiling and was decorated with huge chandeliers
 , and multicoloured stained glasses. The Buckingham Palace looked even more
 grand and beautiful that day.        
-    Sherlock was observing the party and there he finds prince Henry. He 
+    Sherlock was observing the party and there he finds Prince Henry. He 
 says him that he wants to talk something private with him. Henry feeling 
 doubtful asks the waiter to bring them drinks in the central room on the 
 first floor and they both go there. 
@@ -360,7 +360,7 @@ if he knows anything about the murderer. Sherlock then replies- “Yes,
 Prince Henry or shall I say Murderer Henry?” Henry being astonished and in
 panic state speaks in harsh tone “What nonsense is this?”
     In the meantime the waiter arrives there with drinks and he 
-intentionally spills the glass of drink in front of everyone. Sherlock 
+intentionally spills the glass of drink in front of them. Sherlock 
 realizes it and says to waiter- “Welcome , black hooded devil or shall I 
 say Austin?”  Austin replies with a smile “so you finally know me now” 
 Lucas with astonishment asks Sherlock “Is he my brother, Austin?” To which 
@@ -372,7 +372,7 @@ out his gun and points towards Henry. And suddenly Sherlock points his gun
 towards Austin. Austin whose throat tightened in unshed tears of sorrow 
 and anger says- “You killed my parents” To which Henry says- “I don’t even
 know you, why would I kill your parents” Then Austin introduces himself - 
-    “I am late prince Charles’s close associate Jonas’s son. The fire that
+    “I am late Prince Charles’s close associate Jonas’s son. The fire that
 you had set in farmhouse had destructed and parted our lives apart.” He 
 continues “I was present there when you had burnt the farmhouse. I somehow 
 managed to save my 5 year old self and kidnapped John. Then I went in 
@@ -394,7 +394,7 @@ any innocent and why would I let my brother and father die” saying this
 Austin shoots at the time machine present in Lucas’s hand. And suddenly 
 there was some spark in the machine and Lucas disappears. Sherlock stood 
 in complete silence after watching this and asks  Austin “Did you just say
-you father? And what did you do to Lucas?” Austin wiping out his tears 
+your father? And what did you do to Lucas?” Austin wiping out his tears 
 says “Let me explain you Sherlock. Though I have tried several times to 
 change my past and future, the sequence of events will occur in the same 
 way as that was destined. This is a bootstrap paradox that one cannot 
@@ -410,11 +410,11 @@ if I had not shot the time machine our family would have  disappeared and
 then we would not have experienced our happy family life even for a short 
 time.”
     Austin continued “I had killed all three of John’s associates in three
-different time zones so that you would get the time concept clearly and 
+different time zones so that you should get the time concept clearly and 
 then reach out to me. And if the bodies don’t belong to that time zone no 
 one will be able to identify them and there is no chance of investigation. 
 Time works in a magical way, Sherlock. And let me tell you the future ..” 
-Everyone present in the room gets paniced. And looking at his watch Austin 
+Everyone present in the room gets panicked. And looking at his watch Austin 
 says “Henry will die in 5 seconds and..” Hearing this Henry tries to run 
 away, Austin shoots Henry in head and Sherock shoots Austin. Henry falls 
 right dead. And Austin falls down and says “..and me too!” saying this 
