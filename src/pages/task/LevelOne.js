@@ -55,9 +55,6 @@ export default class LevelOne extends Component {
       };
 
     handleUserAnswer =async ()=>{
-        // const userRef=firestore.doc(`answers/1`);       
-        // const {level1}=await (await userRef.get()).data();
-        // console.log(level1);
         if(this.props.correctAnswer===this.state.userAnswer)
         {
            
@@ -84,25 +81,20 @@ export default class LevelOne extends Component {
     render() {
         // const {id}=this.props;
         const {showAnswer,submitAnswer,hint} =this.props;
-        const {venue,story,question,dataString,correctAnswer,level,venueTime}=this.props
+        const {story,question,dataString,correctAnswer}=this.props
         
         return (
             <Jumbotron className='one-task-page'>
                 <div className="inside-book">
-                    {/* <Row className="task-page-heading">Level {level}</Row>                    */}
-                    <Row className="task-page-heading">{venue}</Row>
-                    {
-                        venueTime?(<Row className="task-page-heading">{venueTime}</Row>):null
-                    }     
-                    <Row> 
-                    <Col className='hero-image-container'>
-                        <div className="hero-image">
-                            <div className="hero-text">
-                                <pre>{story}</pre>                    
+                    <Row>
+                        <Col className='hero-image-container'>
+                            <div className="hero-image">
+                                <div className="hero-text">
+                                    <pre>{story}</pre>                    
+                                </div>
                             </div>
-                        </div>
-                        
-                    </Col>
+                            
+                        </Col>
                     </Row>
                     <FormInput
                         type='text'
