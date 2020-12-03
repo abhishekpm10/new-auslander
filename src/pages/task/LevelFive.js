@@ -3,6 +3,7 @@ import {firestore} from '../../firebase/firebase.utils'
 import FormInput from '../../components/form-input/form-input.component'
 import {Link} from 'react-router-dom'
 import {Button,Jumbotron, Row,Col} from 'react-bootstrap'
+import {reactLocalStorage} from 'reactjs-localstorage'
 import './styles/LevelFive.scss'
 
 export default class LevelOne extends Component {
@@ -35,10 +36,11 @@ export default class LevelOne extends Component {
     handleShowAnswer=async ()=>{
         const {id}=this.props;
         let {score,submitAnswer,showAnswer}=this.props;
-        
-        if(showAnswer)
+        const tmpVal=reactLocalStorage.get('timer');
+
+        if(showAnswer&&tmpVal)
         {
-            if((!submitAnswer[4])&&(!showAnswer[4]))
+            if((!submitAnswer[4])&&(!showAnswer[4])&&(tmpVal<=2400))
             {
                 showAnswer[4]=new Date();
                 const userRef=firestore.doc(`users/${id}`);       
