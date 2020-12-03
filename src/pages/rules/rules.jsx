@@ -18,7 +18,7 @@ export default function rules() {
             •	If you are not able to find any answer, you can view the answer but then the current score then gets reduced by 10 and then you are not able to submit the following answer and you will be directed towards the next part.<br></br>
             4.	So the max score for the event is 80 . i.e 50 for the first five parts and 30 for the last part or conclusion box. Conclusion part’s score will be hidden and will be allotted by judges.<br></br>
             Contestant with the max score will be declared as winner.<br></br>
-            5.	The time for completing the entire event is 1 hour 35 minutes, which should be completed within 9-11 PM slot in which extra 5 minutes have been given for reading the rules. Any answer submitted after 11 PM will not be taken into consideration as we will block our database post 11PM<br></br>
+            5.	The time for completing the entire event is 1 hour 35 minutes, which should be completed within 9-11 PM slot in which extra 5 minutes have been given for reading the rules. Any answer submitted after 11 PM will not be taken into consideration as we will block our database for any request made post 11PM<br></br>
             6.	Individual track of students are being maintained .Any suspicious activity like submitting two answer within a very short span will be taken into consideration and that candidate’s participation will be debarred.<br></br>
             7.	Any scene of plagiarism(exact copy of other’s answer) will be checked and if one is found to do so, he will be debarred.<br></br>
             

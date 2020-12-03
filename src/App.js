@@ -7,6 +7,7 @@ import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up
 import Rules from './pages/rules/rules'
 import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+import En from 'flobby/encrpt'
 import {Container} from 'react-bootstrap'
 
 import LevelOne from './pages/task/LevelOne'
@@ -15,7 +16,7 @@ import LevelThree from './pages/task/LevelThree'
 import LevelFour from './pages/task/LevelFour'
 import LevelFive from './pages/task/LevelFive'
 import LevelSix from './pages/task/LevelSix'
-import DATA from './pages/task/task.data'
+
 
 class App extends React.Component {
   constructor() {
@@ -78,12 +79,12 @@ class App extends React.Component {
         {/* <LevelOne {...currentUser}></LevelOne> */}
         <Switch>
           <Route exact path='/rule' component={Rules} />
-          <Route exact path='/theroyalmurder' render={()=><LevelOne {...DATA[0]} {...currentUser}></LevelOne>} />
-          <Route exact path='/dejavu' render={()=><LevelTwo {...DATA[1]} {...currentUser}></LevelTwo>} />
-          <Route exact path='/crosswood' render={()=><LevelThree {...DATA[2]} {...currentUser}></LevelThree>} />
-          <Route exact path='/nightofdarkness' render={()=><LevelFour {...DATA[3]} {...currentUser}></LevelFour>} />
-          <Route exact path='/blackhoodeddevil' render={()=><LevelFive {...DATA[4]} {...currentUser}></LevelFive>} />
-          <Route exact path='/endgame' render={()=><LevelSix {...DATA[5]} {...currentUser}></LevelSix>} />
+          <Route exact path='/theroyalmurder' render={()=><LevelOne {...En[0]} {...currentUser}></LevelOne>} />
+          <Route exact path='/dejavu' render={()=><LevelTwo {...En[1]} {...currentUser}></LevelTwo>} />
+          <Route exact path='/crosswood' render={()=><LevelThree {...En[2]} {...currentUser}></LevelThree>} />
+          <Route exact path='/nightofdarkness' render={()=><LevelFour {...En[3]} {...currentUser}></LevelFour>} />
+          <Route exact path='/blackhoodeddevil' render={()=><LevelFive {...En[4]} {...currentUser}></LevelFive>} />
+          <Route exact path='/endgame' render={()=><LevelSix {...En[5]} {...currentUser}></LevelSix>} />
           <Route exact path='/' render={()=>currentUser?(<Redirect to='/rule'/>):<SignInAndSignUpPage/>}/>
           
         </Switch>
