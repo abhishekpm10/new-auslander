@@ -163,7 +163,7 @@ lots of questions arising in his mind.
 observation he finds out that the crumb was of Oak leaves which he had seen 
 earlier near Charles body. Sherlock makes a guess that the black hooded 
 devil might have hit him on his forehead while he was in Aylesbury Farm 
-House. So he might had become unconscious and the brought him to 1918 and 
+House. So he might had become unconscious and then brought him to 1918 and 
 burned him alive. All that on the same day of Prince Charles death and 
 Jonas-Martha being missing.
     Seeing to the right side, there was a message written over the wall – 
@@ -171,6 +171,11 @@ Jonas-Martha being missing.
 expected better from you….Isn’t your game on yet?......Right after 2 
 hours….the next murder will tick your door….if you have courage, then try 
 and save next man….code is “CSEO”.”
+    Sherlock and you instantly put the message in time machine and gets 
+teleported to same place in 1927 as he was able to decipher the mechanism 
+of code – “0-A 1-C 2-E 3-G……” The message on the same wall had changed and 
+it was- “You have got insufficient time Sherlock…..try and stop murder at 
+Gun-fleet sands….tick tock tick tock” Sherlock reads and leave in hurry.
 
                                                     24 June,1927 2:30 AM
 
@@ -323,7 +328,7 @@ of glass.
     He threw few gardening pots and broke the door and went inside. After 
 few minutes, Sherlock could see the black hooded devil carrying an 
 unconscious Austin, the 5-year old kid. He was not dead but some fire was 
-still burning around his collar area. Latter that extinguished by black 
+still burning around his collar area. Latter extinguished by black 
 devil but the area around neck got burnt. Reaching the cart he dropped 
 Austin there with John. He opens his time machine and the cart disappeared.
     Sherlock and you come out of hiding and rushes towards the right 
@@ -431,7 +436,7 @@ hold power again till she finds an appropriate ruler for London.
 sequence of events that would have prevented this time loop or bootstrap 
 paradox, to which you reply “Yes, …
         `,
-        question:`Fill the answer in the conclusion box-`
+        question:`Write a proper conclusion to the story showing how the time loop shall be ended`
     }
 ]
 

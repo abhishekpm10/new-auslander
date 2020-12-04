@@ -40,7 +40,7 @@ export default class LevelOne extends Component {
 
         if(showAnswer&&tmpVal)
         {
-            if((!submitAnswer[4])&&(!showAnswer[4])&&(tmpVal<=2400))
+            if((!submitAnswer[4])&&(!showAnswer[4])&&(tmpVal<=3900))
             {
                 showAnswer[4]=new Date();
                 const userRef=firestore.doc(`users/${id}`);       
