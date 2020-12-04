@@ -16,7 +16,7 @@ export default function rules() {
             3.	For the first five parts the current score gets incremented by 10 after successful submission of answer for their respective part. However :<br></br>
             •	Using hint for any part reduces the current score by 5 <br></br>
             •	If you are not able to find any answer, you can view the answer but then the current score then gets reduced by 10 and then you are not able to submit the following answer and you will be directed towards the next part.<br></br>
-            •   Show Answer Button can be used only at 85 min of your timer for level 1, 80min for level 2,75min for level 3,70min for level 4,65 min for level 5.
+            •   Show Answer Button can be used only after 85 min of your timer for level 1, 80min for level 2,75min for level 3,70min for level 4,65 min for level 5.
                 This is done to avoid malpractices.<br></br>
             4.	So the max score for the event is 80 . i.e 50 for the first five parts and 30 for the last part or conclusion box. Conclusion part’s score will be hidden and will be allotted by judges.<br></br>
             Contestant with the max score will be declared as winner.<br></br>

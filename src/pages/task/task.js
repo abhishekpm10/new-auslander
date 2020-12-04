@@ -84,9 +84,10 @@ Lucas’s parents. Decipher the message and set it’s value in the machine
                                                         June 23,1887
  On the route to Sydenhem hill wood forest ,Near London
     After identifying the clue, Sherlock and you are on the way to Sydenhem
-hill wood forest. It was an early summer morning . The leaves from the tall trees lay scattered on the forest  floor. 
-And upon the forest floor so woven with ancient tree roots came a light 
-filtered by the bouquet of foliage above.
+hill wood forest. It was an early summer morning . The leaves from the tall
+trees lay scattered on the forest  floor.And upon the forest floor so woven 
+with ancient tree roots came a light filtered by the bouquet of foliage 
+above.
     Sherlock and you reached the main Sydenham station. It was a lonely 
 station which never saw a crowd. The street was desolate. The traffic light 
 swung in the breeze, telling all the nonexistent drivers to stop. After 
@@ -147,8 +148,8 @@ Near Junkyard, in cross wood rail, London
     Sherlock and you enter the Junkyard. There was lot of waste materials 
 like rusted metals, smashed bodies of vintage cars were thrown surrounded by 
 fence. There you see a small warehouse in corner. You both enter the 
-warehouse finding out nobody there, but a big cross hanging on the wall having a 
-burnt dead body hanging over it. The body was burnt but there was a mark 
+warehouse finding out nobody there, but a big cross hanging on the wall having 
+a burnt dead body hanging over it. The body was burnt but there was a mark 
 on his forehead and face not burnt properly, was identifiable. 
     Sherlock goes closer to see the face of burnt body and he was surprised. 
 He realises that the dead body was of John, Henry’s close associate, whose 
