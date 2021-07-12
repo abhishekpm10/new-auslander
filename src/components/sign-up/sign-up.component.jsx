@@ -60,7 +60,7 @@ class SignUp extends React.Component {
     return (
       <div className='sign-up'>
         <h2 className='title'>I do not have a account</h2>
-        <span>Sign up with your email and password</span>
+        <span>Password must have more than 8 chars,lower[a-b],upper[A-Z],digit[0-9],special chars </span>
         <form className='sign-up-form' onSubmit={this.handleSubmit}>
           <FormInput
             type='text'
